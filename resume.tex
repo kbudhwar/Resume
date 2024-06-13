@@ -20,10 +20,11 @@
 \usepackage{hyphenat}
 \usepackage{fontawesome}
 \usepackage{graphicx}
+\usepackage[left=0.5in,right=0.5in,top=0.5in,bottom=0.5in]{geometry}
 \input{glyphtounicode}
 
 % \definecolor{customBlue}{RGB}{163, 8, 47}
-\definecolor{customBlue}{RGB}{ 37, 82, 143}
+\definecolor{customBlue}{RGB}{35, 81, 177}
 % \definecolor{customBlue}{RGB}{ 0, 0, 0}
 \definecolor{customGrey}{RGB}{0, 0, 0}
 %---------- FONT OPTIONS ----------
@@ -47,11 +48,11 @@
 \renewcommand{\footrulewidth}{0pt}
 
 % Adjust margins
-\addtolength{\oddsidemargin}{-0.5in}
-\addtolength{\evensidemargin}{-0.5in}
-\addtolength{\textwidth}{1in}
-\addtolength{\topmargin}{-.5in}
-\addtolength{\textheight}{1.0in}
+% \addtolength{\oddsidemargin}{-0.5in}
+% \addtolength{\evensidemargin}{-0.5in}
+% \addtolength{\textwidth}{1in}
+% \addtolength{\topmargin}{-.5in}
+% \addtolength{\textheight}{1.0in}
 
 \urlstyle{same}
 
@@ -80,7 +81,7 @@
 \newcommand{\resumeSubheading}[2]{
   \vspace{-2pt}\item
     \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
-      \textbf{#1} & \small{#2} \\
+      \textbf{#1} & {\small{#2}} \\
     \end{tabular*}\vspace{-5pt}
 }
 
@@ -119,17 +120,17 @@
 %---------- HEADING ----------
 
 \begin{center}
-    {\color{customBlue}\sffamily\fontsize{30pt}{96pt}\selectfont {KHUSHI BUDHWAR}} \\ \vspace{3pt}
+    {\color{customBlue}\sffamily\fontsize{30pt}{96pt}\selectfont \textbf{KHUSHI BUDHWAR}} \\ \vspace{3pt}
     \small
-    \faMobile \hspace{.5pt} \href{tel:6479632342}{(647)-963-2342}
-    {$|$}
-    \faEnvelope \hspace{.5pt} \href{mailto:kbudhwar@uwaterloo.ca}{kbudhwar@uwaterloo.ca}
+    \scalebox{1.1}{\faGlobe}  \href{https://khushibudhwar.ca/}{khushibudhwar.ca}
     {$|$}
     \faLinkedinSquare \hspace{.5pt} \href{https://www.linkedin.com/in/khushi-budhwar/}{khushi-budhwar}
     {$|$}
     \scalebox{1.15}{\faGithub} \href{https://github.com/kbudhwar}{kbudhwar}
     {$|$}
-    \scalebox{1.1}{\faGlobe}  \href{https://khushibudhwar.ca/}{khushibudhwar.ca}
+    \faMobile \hspace{.5pt} \href{tel:6479632342}{(647)-963-2342}
+    {$|$}
+    \faEnvelope \hspace{.5pt} \href{mailto:kbudhwar@uwaterloo.ca}{kbudhwar@uwaterloo.ca}
 \end{center}
 
 %----------- EDUCATION -----------
@@ -138,10 +139,11 @@
   \vspace{3pt}
   \resumeSubHeadingListStart
     \resumeSubheading
-      {\color{customBlue} {University of Waterloo} \color{black} $|$ \small{Bachelor of Software} Engineering
+      {\color{customBlue} {University of Waterloo} \color{black} $|$ {Bachelor of Software} Engineering
       }{Sep 2021 \textbf{--} April 2026}
     \resumeItemListStart
-        \resumeItem {\textbf{Relevant Coursework: }Data Structures and Algorithms, Object-Oriented Programming, compilers, and statistics.}
+        \resumeItem {\textbf{Relevant Coursework: }Data Structures and Algorithms, Linear Algebra, Compilers, and Statistics}
+        \resumeItem {Awarded the President's Scholarship of Distinction, received \textbf{\$3,500} for achieving an admission average of \textbf{99\%}}
     \resumeItemListEnd
   \resumeSubHeadingListEnd
 
@@ -155,7 +157,7 @@
         \textbf{Languages:}{ Python, SQL, R, Java, C, C++, C\#, JavaScript, Bash, HTML, CSS, PHP, MATLAB} \\ \vspace{3pt}
         
         \textbf{Frameworks/Libraries:}{ PyTorch, TensorFlow, Scikit-Learn, Spark, Keras, Pandas, NumPy} \\ \vspace{3pt}
-        \textbf{Tools:}{ Kubernetes, MLflow, Terraform, GCP, Docker, Git, Tableau, Apache Airflow, Jenkins, BigQuery} \\ \vspace{3pt}
+        \textbf{Tools:}{ Kubernetes, MLflow, Terraform, GCP, Docker, Git, Tableau, Apache Airflow, Jenkins, BigQuery, Power BI} \\ \vspace{3pt}
         
     }}
   \resumeSubHeadingListEnd
@@ -167,41 +169,43 @@
   \resumeSubHeadingListStart
 
     \resumeSubheading
-      {\color{customBlue}Spotify  \color{black} $|$ \small{Product Data Science Intern}}{May 2024 \textbf{--} July 2024}
+      {\color{customBlue}Spotify  \color{black} $|$ {Product Data Science Intern}}{May 2024 \textbf{--} July 2024}
         \resumeItemListStart
-            \resumeItem{Researched proprio}
-            \resumeItem{}
-            \resumeItem{}
+           \resumeItem{Contributed to the personalization team responsible for enhancing recommendation systems through causal inference methods, serving \textbf{570M+} monthly active users in \textbf{184} different markets}
+            \resumeItem{Designed a statistical algorithm to forecast financial indicators from A/B test metrics to aid rollout decisions, projected to increase annual gross profits by \textbf{\$1M+}}
+            \resumeItem{Extracted, merged, and wrangled \textbf{78M+} rows of data using Python, SQL, and BigQuery for data-driven insights}
+            \resumeItem{Redefined audiobook recommendation cohorts through scenario analysis and EDA to increase user consumption}
         \resumeItemListEnd
 
     \resumeSubheading
-      {\color{customBlue} Arami Lab \color{black} $|$ \small{Undergraduate Research Assistant}}{Jan 2024 \textbf{--} Aug 2024}
+      {\color{customBlue} Arami Lab \color{black} $|$ {Undergraduate Research Assistant}}{Jan 2024 \textbf{--} Aug 2024}
         \resumeItemListStart
-            \resumeItem{Conducted and authored research on proprioception using statistical modeling of \textbf{70,000+} rows of EMG and kinematics data from BURT robots (publication pending).}
-            \resumeItem{Performed}
+            \resumeItem{Authored and researched proprioception through neural analysis of muscle activity using statistical modeling of \textbf{70K+} rows of EMG signals (publication pending)}
+            \resumeItem{Implemented deep learning algorithms to predict proprioceptive responses, increasing model accuracy by \textbf{15\%}}
         \resumeItemListEnd
         
     \resumeSubheading
-      {\color{customBlue} AltaML \color{black} $|$ \small{Machine Learning Associate}}{Sept 2023 \textbf{--} Dec 2023}
+      {\color{customBlue} AltaML \color{black} $|$ {Machine Learning Associate}}{Sept 2023 \textbf{--} Dec 2023}
         \resumeItemListStart
-            \resumeItem{Developed a time-series forecasting experiment for the Government of Canada to predict current economic trends (nowcasting) in the labor market, achieving a MAPE of \textbf{8\%}.}
-            \resumeItem{Performed feature engineering through sentiment analysis on \textbf{10,000+} online job postings and market statistics.}
-            \resumeItem{Automated the software development workflow by developing a CI/CD pipeline in GitLab with Jenkins and Docker.}
+            \resumeItem{Conducted a time-series forecasting experiment for the Government of Alberta to predict current economic trends in the labor market, achieving a MAPE of \textbf{8\%} using an LSTM model}
+            \resumeItem{Performed feature engineering through sentiment analysis on \textbf{10,000+} online job postings and market statistics}
+            \resumeItem{Developed a CI/CD pipeline in GitLab with Terraform, and Docker, reducing deployment time by \textbf{\(\sim \)20\%}}
+            \resumeItem{Created a dashboard using Databricks, Matplotlib, and Power BI to easily visualize real-time economic insights}
         \resumeItemListEnd
 
     \resumeSubheading
-      {\color{customBlue} Blackberry \color{black} $|$ \small{Machine Learning Intern}}{Jan 2023 \textbf{--} April 2023}
+      {\color{customBlue} BlackBerry \color{black} $|$ {Machine Learning Intern}}{Jan 2023 \textbf{--} April 2023}
         \resumeItemListStart
-            \resumeItem{Conducted an NLP classification experiment with an F1 score of \textbf{98\%} on imbalanced data to identify open-source licenses in code comments using Pytorch and Tensorflow.}
-            \resumeItem{Designed a MySQL schema to extract, preprocess, and store \textbf{130,000+} code comments, easing data processing.}
-            \resumeItem{Developed an ML workflow using MLflow, Terraform, and Airflow to automate and track experiments.}
+            \resumeItem{Conducted an NLP classification experiment with an F1 score of \textbf{98\%} on imbalanced data to identify open-source licenses in code comments using Pytorch and Tensorflow}
+            \resumeItem{Designed a pipeline to extract, preprocess, and store \textbf{130K+} code comments, cutting data processing time by \textbf{45\%}}
+            \resumeItem{Developed an ML workflow using Terraform, MLflow, and Airflow to automate and track experiments}
         \resumeItemListEnd
 
     % \vspace{20pt}
     \resumeSubheading
-      {\color{customBlue} VerticalScope Inc. \color{black} $|$ \small{Software Engineering Intern}}{May 2022 \textbf{--} Aug 2022}
+      {\color{customBlue} VerticalScope Inc. \color{black} $|$ {Software Engineering Intern}}{May 2022 \textbf{--} Aug 2022}
         \resumeItemListStart
-            \resumeItem{Responsible for the maintenance of a Kubernetes cluster hosted in GCP that serves \textbf{1,200+} community-driven forum sites that receive over \textbf{1 billion} requests weekly.}
+            \resumeItem{Responsible for the maintenance of a Kubernetes cluster hosted in GCP that serves \textbf{1,200+} community-driven forum sites that receive over \textbf{1 billion} requests weekly}
         \resumeItemListEnd
 
     
@@ -214,18 +218,22 @@
     \resumeSubHeadingListStart
       
       \resumeProjectHeading
-        {\color{customBlue}\textbf{NLP Next Word Predictor } \color{black} \href{https://github.com/kbudhwar}{\scalebox{1.15}{\faGithub}} \hspace{0.5pt} $|$ \textit{\small{ NLTK, TensorFlow, PyTorch}}}{April 2023}
+        {\color{customBlue}\textbf{NLP Next Word Predictor } \color{black} \href{https://github.com/kbudhwar/nlp-project}{\scalebox{1.15}{\faGithub}} \hspace{0.5pt} $|$ \textit{\small{ NLTK, TensorFlow, PyTorch}}}{May 2023}
           \resumeItemListStart
-            \resumeItem{Constructed an LSTM model that can predict the next word by providing customized lengths of context.}
-            \resumeItem{Experimented with NLP models like BiLSTM, BERT, and GRUs using PyTorch to improve accuracy.}
+            \resumeItem{Constructed an LSTM model that can predict the next word by providing customized lengths of context}
+            \resumeItem{Experimented with NLP models like BiLSTM, BERT, and GRUs using PyTorch to improve accuracy}
           \resumeItemListEnd
         \resumeProjectHeading
-        {\color{customBlue}\textbf{TextSaver}}{Sept 2019 \textbf{--} Nov 2021}
+        {\color{customBlue}\textbf{Reinvented Heardle } \color{black} \href{https://github.com/kbudhwar/Spotify-Karoke}{\scalebox{1.15}{\faGithub}} \hspace{0.5pt} $|$ \textit{\small{ JavaScript, MongoDB, React.js, CSS}}}{April 2023}
           \resumeItemListStart
-            \resumeItem{Founded an all women team to create a web app that condenses a page from a student’s textbook into flashcards.}
-            \resumeItem{Viewed in over 50 countries, has collected over \textbf{1,100} emails, and has gained over \textbf{\$1000} from angel investors.}
+            \resumeItem{Collaborated on an interactive game that prompts the user to guess the song from their personal Spotify Playlist after playing a short snippet}
           \resumeItemListEnd
-      
+      \resumeProjectHeading
+        {\color{customBlue}\textbf{TextSaver}}{Sept 2019 \textbf{--} Nov 2022}
+          \resumeItemListStart
+            \resumeItem{Founded an all-women team to create a web app that condenses textbook pages into flashcards using Python}
+            \resumeItem{Viewed in over \textbf{50} countries, has collected over \textbf{1,100} emails, and has gained over \textbf{\$1000} from angel investors}
+          \resumeItemListEnd
     \resumeSubHeadingListEnd
 
 \end{document}
